@@ -106,7 +106,7 @@ def intro():
 
 def  pickCat1():
     global userinput1
-    print('Select a Number ', end="")
+    print('Select a Number ', end='')
     try:
         userInput = int(input("~ "))
     except ValueError:
