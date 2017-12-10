@@ -847,7 +847,6 @@ def loadlists():
 
 def choosetags():
     global finalthirty
-    print(taglist)
     num_to_select = 30  # set the number to select here.
     list_of_random_items = random.sample(taglist, num_to_select)
     finalthirty = list_of_random_items[0:30]
