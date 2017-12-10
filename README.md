@@ -1,4 +1,4 @@
-iG hashTag Genereator v 2.1b
+# iG hashTag Genereator v 2.1b
 
 This is a simple hashtag generator for instagram 
 
@@ -15,10 +15,10 @@ Written in Python!
 ps:
 im new to python.   
 
-Requirements
+## Requirements
 Python3.6
 
-How to install and run:
+### How to install and run:
 Download and install Python to your computer.
 
 Download ZIP and extract
