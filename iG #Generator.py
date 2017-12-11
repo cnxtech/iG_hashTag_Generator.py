@@ -97,9 +97,9 @@ def intro():
     5: Digital Art     15: Landscape     25: Street          35: ＶａｐｏｒＷａｖｅ
     6: Dogs            16: Macro         26: Travel          36: --------
     7: Drone           17: Minimal       27: Video Games     37: --------
-    8: Fashion         18: Music         28: Wedding         38: --------
+    8: Fashion         18: Music         28: Wedding         38: --Time Lapse--
     9: Fine Art        19: Pets          29: Wild Animals    39: --------
-    10: Food           20: Photography   30: Wire Wrap       40: --------
+    10: Food           20: Photography   30: Wire Wrap       40: ----3d printing--
     ''')
 
     pickCat1()
