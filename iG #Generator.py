@@ -38,6 +38,8 @@ weddingTags = open('txt files/Wedding.txt', 'r')
 wildanimalTags = open('txt files/Wild Animals.txt', 'r')
 wirewrapTags = open('txt files/Wire Wrap.txt', 'r')
 vaporwaveTags = open('txt files/Vaporwave.txt', 'r')
+timelapseTags = open('txt files/Timelapse.txt', 'r')
+threeDprintTags = open('txt files/Timelapse.txt', 'r')
 
 # User Inputs
 userinput1 = 123
@@ -45,6 +47,7 @@ userinput2 = 123
 userinput3 = 123
 
 # Clean Lists
+threeD = []
 a1 = []
 a2 = []
 b1 = []
@@ -75,6 +78,7 @@ s2 = []
 s3 = []
 s4 = []
 t1 = []
+t2 = []
 v1 = []
 w1 = []
 w2 = []
@@ -86,20 +90,20 @@ finalthirty = []
 def intro():
     print('''
                             iG #hashTag Generator                          
-                                    v2.1b
+                                    v2.2b
                           http://ReallyEpicShit.com''')
-    print("                                  #Tags:", len(a1 + a2 + b1 + b2 + c1 + c2 + c3 + d1 + d2 + d3 + f1 + f2 + f3 + g1 +g2 + h1 + i1 + j1 + l1 + m1 + m2 + m3 + p1 + p2 + p3 + s1 + s2 + s3 + s4 + t1 + v1 + w1 + w2 + w3 + v1))
+    print("                                  #Tags:", len(threeD + a1 + a2 + b1 + b2 + c1 + c2 + c3 + d1 + d2 + d3 + f1 + f2 + f3 + g1 +g2 + h1 + i1 + j1 + l1 + m1 + m2 + m3 + p1 + p2 + p3 + s1 + s2 + s3 + s4 + t1 + t2 + v1 + w1 + w2 + w3 + v1))
     print('''
     1: Astro           11: Glamour       21: Portraits       31: Bar
     2: Black & White   12: HDR           22: Sale/Giveaway   32: Custom Tags
     3: Cars            13: Instagram     23: Salt Aquarium   33: Ancient
     4: Cats            14: Jewelry       24: Sports          34: Gems
     5: Digital Art     15: Landscape     25: Street          35: ＶａｐｏｒＷａｖｅ
-    6: Dogs            16: Macro         26: Travel          36: --------
-    7: Drone           17: Minimal       27: Video Games     37: --------
-    8: Fashion         18: Music         28: Wedding         38: --Time Lapse--
-    9: Fine Art        19: Pets          29: Wild Animals    39: --------
-    10: Food           20: Photography   30: Wire Wrap       40: ----3d printing--
+    6: Dogs            16: Macro         26: Travel          36: Timelapse
+    7: Drone           17: Minimal       27: Video Games     37: 3D Printing
+    8: Fashion         18: Music         28: Wedding         38: ------------
+    9: Fine Art        19: Pets          29: Wild Animals    39: -----------
+    10: Food           20: Photography   30: Wire Wrap       40: ----------
     ''')
 
     pickCat1()
@@ -218,7 +222,13 @@ def  pickCat1():
     if userInput == 35:
         userinput1 = 35
         print('ＶａｐｏｒＷａｖｅ')
-    elif userInput > 35:
+    if userInput == 36:
+        userinput1 = 36
+        print('Timelapse')
+    if userInput == 37:
+        userinput1 = 37
+        print('3D Printing')
+    elif userInput > 37:
         print('Error Nothing Here, Try Again')
         pickCat1()
     elif userInput == 0:
@@ -341,11 +351,17 @@ def  pickCat2():
     if userInput == 35:
         userinput2 = 35
         print('ＶａｐｏｒＷａｖｅ')
+    if userInput == 36:
+        userinput2 = 36
+        print('Timelapse')
+    if userInput == 37:
+        userinput2 = 37
+        print('3D Printing')
     if userInput == 0:
         userinput2 = 0
         print("Skip")
         pickCat3()
-    elif userInput > 35:
+    elif userInput > 37:
         print('Error Nothing Here, Try Again')
         pickCat2()
 
@@ -464,11 +480,17 @@ def  pickCat3():
     if userInput == 35:
         userinput3 = 35
         print('ＶａｐｏｒＷａｖｅ')
+    if userInput == 36:
+        userinput3 = 36
+        print('Timelapse')
+    if userInput == 37:
+        userinput3 = 37
+        print('3D Printing')
     if userInput == 0:
         userinput3 = 0
         print("Skip")
         loadlists()
-    elif userInput > 35:
+    elif userInput > 37:
         print('Error Nothing Here, Try Again')
         pickCat3()
 
@@ -476,6 +498,7 @@ def  pickCat3():
     loadlists()
 
 def loadtxts():
+    global threeD
     global a1
     global a2
     global b1
@@ -506,6 +529,7 @@ def loadtxts():
     global s3
     global s4
     global t1
+    global t2
     global v1
     global w1
     global w2
@@ -617,6 +641,12 @@ def loadtxts():
     for eachLine in vaporwaveTags:
         tag = eachLine.strip()
         v2.append(tag)
+    for eachLine in timelapseTags:
+        tag = eachLine.strip()
+        t2.append(tag)
+    for eachLine in threeDprintTags:
+        tag = eachLine.strip()
+        threeD.append(tag)
 
     intro()
 
@@ -695,6 +725,11 @@ def loadlists():
         taglist = taglist + g2
     if userinput1 == 35:
         taglist = taglist + v2
+    if userinput1 == 36:
+        taglist = taglist + t2
+    if userinput1 == 37:
+        taglist = taglist + threeD
+
         #### 2 ####
     if userinput2 == 0:
         taglist = taglist
@@ -766,8 +801,12 @@ def loadlists():
         taglist = taglist + a2
     if userinput2 == 34:
         taglist = taglist + g2
-    if userinput1 == 35:
+    if userinput2 == 35:
         taglist = taglist + v2
+    if userinput2 == 36:
+        taglist = taglist + t2
+    if userinput2 == 37:
+        taglist = taglist + threeD
 
         #### 3 ####
     if userinput3 == 0:
@@ -840,8 +879,12 @@ def loadlists():
         taglist = taglist + a2
     if userinput3 == 34:
         taglist = taglist + g2
-    if userinput1 == 35:
+    if userinput3 == 35:
         taglist = taglist + v2
+    if userinput3 == 36:
+        taglist = taglist + t2
+    if userinput3 == 37:
+        taglist = taglist + threeD
 
     choosetags()
 
