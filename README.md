@@ -1,4 +1,4 @@
-# iG hashTag Genereator v 2.1b
+# iG hashTag Generator v 2.1b
 
 This is a simple hashtag generator for instagram 
 
