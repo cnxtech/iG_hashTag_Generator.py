@@ -39,7 +39,8 @@ wildanimalTags = open('txt files/Wild Animals.txt', 'r')
 wirewrapTags = open('txt files/Wire Wrap.txt', 'r')
 vaporwaveTags = open('txt files/Vaporwave.txt', 'r')
 timelapseTags = open('txt files/Timelapse.txt', 'r')
-threeDprintTags = open('txt files/Timelapse.txt', 'r')
+threeDprintTags = open('txt files/3D Printing.txt', 'r')
+weedTags = open('txt files/Weed.txt', 'r')
 
 # User Inputs
 userinput1 = 123
@@ -83,6 +84,7 @@ v1 = []
 w1 = []
 w2 = []
 w3 = []
+w4 = []
 v2 = []
 taglist = []
 finalthirty = []
@@ -92,7 +94,7 @@ def intro():
                             iG #hashTag Generator                          
                                     v2.2b
                           http://ReallyEpicShit.com''')
-    print("                                  #Tags:", len(threeD + a1 + a2 + b1 + b2 + c1 + c2 + c3 + d1 + d2 + d3 + f1 + f2 + f3 + g1 +g2 + h1 + i1 + j1 + l1 + m1 + m2 + m3 + p1 + p2 + p3 + s1 + s2 + s3 + s4 + t1 + t2 + v1 + w1 + w2 + w3 + v1))
+    print("                                  #Tags:", len(threeD + a1 + a2 + b1 + b2 + c1 + c2 + c3 + d1 + d2 + d3 + f1 + f2 + f3 + g1 +g2 + h1 + i1 + j1 + l1 + m1 + m2 + m3 + p1 + p2 + p3 + s1 + s2 + s3 + s4 + t1 + t2 + v1 + w1 + w2 + w3 + w4 + v1))
     print('''
     1: Astro           11: Glamour       21: Portraits       31: Bar
     2: Black & White   12: HDR           22: Sale/Giveaway   32: Custom Tags
@@ -101,7 +103,7 @@ def intro():
     5: Digital Art     15: Landscape     25: Street          35: ＶａｐｏｒＷａｖｅ
     6: Dogs            16: Macro         26: Travel          36: Timelapse
     7: Drone           17: Minimal       27: Video Games     37: 3D Printing
-    8: Fashion         18: Music         28: Wedding         38: ------------
+    8: Fashion         18: Music         28: Wedding         38: Weed
     9: Fine Art        19: Pets          29: Wild Animals    39: -----------
     10: Food           20: Photography   30: Wire Wrap       40: ----------
     ''')
@@ -228,7 +230,10 @@ def  pickCat1():
     if userInput == 37:
         userinput1 = 37
         print('3D Printing')
-    elif userInput > 37:
+    if userInput == 38:
+        userinput1 = 38
+        print('Weed')
+    elif userInput > 38:
         print('Error Nothing Here, Try Again')
         pickCat1()
     elif userInput == 0:
@@ -357,11 +362,14 @@ def  pickCat2():
     if userInput == 37:
         userinput2 = 37
         print('3D Printing')
+    if userInput == 38:
+        userinput2 = 38
+        print('Weed')
     if userInput == 0:
         userinput2 = 0
         print("Skip")
         pickCat3()
-    elif userInput > 37:
+    elif userInput > 38:
         print('Error Nothing Here, Try Again')
         pickCat2()
 
@@ -486,11 +494,14 @@ def  pickCat3():
     if userInput == 37:
         userinput3 = 37
         print('3D Printing')
+    if userInput == 38:
+        userinput3 = 38
+        print('Weed')
     if userInput == 0:
         userinput3 = 0
         print("Skip")
         loadlists()
-    elif userInput > 37:
+    elif userInput > 38:
         print('Error Nothing Here, Try Again')
         pickCat3()
 
@@ -534,6 +545,7 @@ def loadtxts():
     global w1
     global w2
     global w3
+    global w4
     global v2
     global totalTags
     for eachLine in astroTags:
@@ -647,6 +659,9 @@ def loadtxts():
     for eachLine in threeDprintTags:
         tag = eachLine.strip()
         threeD.append(tag)
+    for eachLine in weedTags:
+        tag = eachLine.strip()
+        w4.append(tag)
 
     intro()
 
@@ -729,6 +744,8 @@ def loadlists():
         taglist = taglist + t2
     if userinput1 == 37:
         taglist = taglist + threeD
+    if userinput1 == 38:
+        taglist = taglist + w4
 
         #### 2 ####
     if userinput2 == 0:
@@ -807,6 +824,8 @@ def loadlists():
         taglist = taglist + t2
     if userinput2 == 37:
         taglist = taglist + threeD
+    if userinput2 == 38:
+        taglist = taglist + w4
 
         #### 3 ####
     if userinput3 == 0:
@@ -885,6 +904,8 @@ def loadlists():
         taglist = taglist + t2
     if userinput3 == 37:
         taglist = taglist + threeD
+    if userinput3 == 38:
+        taglist = taglist + w4
 
     choosetags()
 
