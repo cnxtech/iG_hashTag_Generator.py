@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e219fc88-d236-44e8-af7a-8c9a71170504" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/iG #Generator.py" afterPath="$PROJECT_DIR$/iG #Generator.py" />
-      <change beforePath="$PROJECT_DIR$/txt files/Weed.txt" afterPath="$PROJECT_DIR$/txt files/Weed.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +16,8 @@
       <file leaf-file-name="iG #Generator.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/iG #Generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="97" column="40" lean-forward="false" selection-start-line="97" selection-start-column="40" selection-end-line="97" selection-end-column="40" />
+            <state relative-caret-position="-10259">
+              <caret line="513" column="16" lean-forward="false" selection-start-line="513" selection-start-column="16" selection-end-line="513" selection-end-column="16" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -303,20 +301,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/instabot.py-master/example2.py">
+    <entry file="file://$PROJECT_DIR$/iG #Generator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/instabot.py-master/src/instabot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13632">
-          <caret line="568" column="0" lean-forward="false" selection-start-line="568" selection-start-column="0" selection-end-line="568" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/instabot.py-master/example2.py" />
+    <entry file="file://$USER_HOME$/Desktop/instabot.py-master/src/instabot.py" />
     <entry file="file://$PROJECT_DIR$/iG #Gen v1.7a.py" />
     <entry file="file://$PROJECT_DIR$/iG #Gen v2.0b.py" />
     <entry file="file://$PROJECT_DIR$/iG #Gen v1.7a.py" />
@@ -347,34 +343,16 @@
     <entry file="file://$PROJECT_DIR$/Duplicate Remover.py" />
     <entry file="file://$USER_HOME$/Desktop/Duplicate Checker/Duplicate Remover.py" />
     <entry file="file://$PROJECT_DIR$/iG #Gen v1.7a.py" />
-    <entry file="file://$USER_HOME$/Desktop/instabot.py-master/example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/instabot.py-master/example.py" />
     <entry file="file://$USER_HOME$/Desktop/instabot.py-master - Copy/example.py" />
-    <entry file="file://$USER_HOME$/Desktop/instabot.py-master/src/instabot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="568" column="0" lean-forward="false" selection-start-line="568" selection-start-column="0" selection-end-line="568" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/instabot.py-master/example2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/instabot.py-master/src/instabot.py" />
+    <entry file="file://$USER_HOME$/Desktop/instabot.py-master/example2.py" />
     <entry file="file://$PROJECT_DIR$/iG #Gen v2.1b.py" />
     <entry file="file://$PROJECT_DIR$/iG #Gen v2.0b.py" />
     <entry file="file://$PROJECT_DIR$/iG #Generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="97" column="40" lean-forward="false" selection-start-line="97" selection-start-column="40" selection-end-line="97" selection-end-column="40" />
+        <state relative-caret-position="-10259">
+          <caret line="513" column="16" lean-forward="false" selection-start-line="513" selection-start-column="16" selection-end-line="513" selection-end-column="16" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

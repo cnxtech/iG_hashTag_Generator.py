@@ -507,7 +507,7 @@ def  pickCat3():
         userinput3 = 38
         print('Weed')
     if userInput == 39:
-        userinput1 = 39
+        userinput3 = 39
         print('Virginia')
     if userInput == 0:
         userinput3 = 0
